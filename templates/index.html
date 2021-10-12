@@ -1,0 +1,243 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Prediction</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/styles.css">
+
+
+</head>
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">LOAN PREDICTION</a>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+
+
+    <div class="container">
+
+
+
+        <form action="\predict" method="post">
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Dependents</h5>
+                            <input type="text" name="Dependents" placeholder="Dependents" required="required" />
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">ApplicantIncome</h5>
+                            <input type="text" name="ApplicantIncome" placeholder="ApplicantIncome" required="required" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <h5 class="card-title">CoapplicantIncome</h5>
+                            <input type="text" name="CoapplicantIncome" placeholder="CoapplicantIncome" required="required" />
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">LoanAmount</h5>
+                            <!-- Destination -->
+                            <input type="text" name="LoanAmount" placeholder="LoanAmount" required="required" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Loan_Amount_Term	</h5>
+                            <!-- Total Stops -->
+                            <input type="text" name="Loan_Amount_Term" placeholder="Loan_Amount_Term" required="required" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Credit_History</h5>
+                            <!-- Airline -->
+                           <input type="text" name="Credit_History" placeholder="Credit_History" required="required" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">gender</h5>
+                            <select name="gender" id="gender" required="required">
+                                <option value="1">Male</option>
+                                <option value="0">Female</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">married</h5>
+                           <select name="married" id="married" required="required">
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+            <br>
+            <br>
+            
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">education</h5>
+                           <select name="education" id="education" required="required">
+                                <option value="1">Not Graduate</option>
+                                <option value="0">Graduate</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">property_area</h5>
+                            <select name="property_area" id="property_area" required="required">
+                                <option value="2">Urban</option>
+                                <option value="0">Rural</option>
+                                <option value="1">Semiurban</option>
+                                
+                            </select>
+                    </div>
+                </div>
+            </div>
+            
+            <br>
+            <br>
+            <br>
+               <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">self_employed</h5>
+                           <select name="self_employed" id="self_employed" required="required">
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <br>
+                <br>
+                <br>
+                
+           
+            
+            <!-- Submit -->
+            <input type="submit" value="Submit" class="btn btn-secondary">
+        </form>
+
+        <br>
+        <br>
+        <h3>{{ prediction_text }}</h3>
+
+        <br>
+        <br>
+
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
